@@ -56,5 +56,10 @@ public class Periodico {
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
-
+    
+    //Método toString
+    @Override
+    public String toString() {
+        return "Periodico{" + "nombre=" + nombre + ", precio=" + precio + ", fecha=" + fecha + '}';
+    }   
 }
