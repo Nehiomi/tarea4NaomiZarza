@@ -5,7 +5,7 @@
  */
 package biblioteca;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -16,5 +16,19 @@ public class Periodico {
     //Atributos
     private String nombre;
     private double precio;
-    private Date fecha;
+    private LocalDate fecha;
+    
+    //Constructor parametrizado
+    public Periodico(String nombre, double precio, LocalDate fecha) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.fecha = fecha;
+    }
+    
+    //Constructor por defecto
+     public Periodico() {
+        this.nombre = "El País";
+        this.precio = 3.2;
+        this.fecha = LocalDate.now();
+    }
 }
